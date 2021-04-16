@@ -1,28 +1,32 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+<template lang="pug">
+  #app.app
+    m-vue
+    m-hero
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import Vue from "vue";
+import MVue from "@/components/MHeader.vue";
+import MHero from "@/components/MHero.vue";
 
 export default Vue.extend({
-  name: 'App',
   components: {
-    HelloWorld
+    MVue,
+    MHero
   }
 });
 </script>
 
 <style lang="stylus">
-#app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito+Sans:wght@200&display=swap');
+
+*
+  margin 0
+  padding 0
+
+.app
+  font-family 'Nunito Sans', sans-serif
+
+h1, h2, h3, h4, h5, h6
+  font-family 'Fjalla One', sans-serif
 </style>
