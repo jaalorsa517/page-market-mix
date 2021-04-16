@@ -1,5 +1,5 @@
 <template lang="pug">
-  .hero
+  section.hero
     h2 NUESTRA
     h2 COMPAÑIA
 </template>
@@ -21,5 +21,5 @@
 
     &:last-child
       letter-spacing 50px
-      color #eee
+      color $color__3
 </style>
