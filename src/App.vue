@@ -10,6 +10,7 @@
         :title="card.title"
         :paragraph="card.paragraph"
         )
+    m-carousel
     m-footer
 </template>
 
@@ -17,6 +18,7 @@
 import Vue from "vue";
 import MVue from "@/components/MHeader.vue";
 import MHero from "@/components/MHero.vue";
+import MCarousel from "@/components/MCarousel.vue";
 import MFooter from "@/components/MFooter.vue";
 import MCard from "@/components/MCardInfo.vue";
 import logo1 from "@/assets/logo-01.png";
@@ -29,6 +31,7 @@ export default Vue.extend({
     MVue,
     MHero,
     MCard,
+    MCarousel,
     MFooter
   },
   data: function() {
@@ -73,6 +76,7 @@ export default Vue.extend({
 
 .app
   font-family 'Nunito Sans', sans-serif
+  color $color__2
 
 h1, h2, h3, h4, h5, h6
   font-family 'Fjalla One', sans-serif

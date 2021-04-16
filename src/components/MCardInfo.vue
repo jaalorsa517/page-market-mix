@@ -37,6 +37,7 @@ export default Vue.extend({
   margin-bottom 5px
   letter-spacing 2px
   font-weight 400
+  color $color__2
 
 .card--paragraph
   font-size 1em
