@@ -1,5 +1,5 @@
 <template lang="pug">
-  footer.footer-container
+  footer.footer-container(v-animate-css="animation.fadeInUp")
     .nav-container
       nav.servicios
         h4 Servicios
@@ -38,6 +38,13 @@ import Vue from "vue";
 export default Vue.extend({
   data: function() {
     return {
+      animation: {
+        fadeInUp:{
+          classes: "fadeInUp",
+          delay: 1000,
+          duration: 800
+        }
+      },
       servicios: [
         "Domicilios",
         "InOut",

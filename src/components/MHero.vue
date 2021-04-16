@@ -1,8 +1,26 @@
 <template lang="pug">
   section.hero
-    h2 NUESTRA
-    h2 COMPAÑIA
+    h2(v-animate-css="animation.zoomInLeft") NUESTRA
+    h2(v-animate-css="animation.zoomInRight") COMPAÑIA
 </template>
+
+<script lang="ts">
+import Vue from "vue";
+export default Vue.extend({
+  data: function() {
+    return {
+      animation: {
+        zoomInLeft: {
+          classes: "zoomInLeft"
+        },
+        zoomInRight: {
+          classes: "zoomInRight"
+        }
+      }
+    };
+  }
+});
+</script>
 
 <style lang="stylus">
 .hero

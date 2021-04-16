@@ -1,5 +1,5 @@
 <template lang="pug">
-  section.carousel-container
+  section.carousel-container(v-animate-css="animation.fadeIn")
     h2 ALGUNOS DE NUESTROS CLIENTES
     carousel(
       :perPage="1"
@@ -38,6 +38,13 @@ export default Vue.extend({
   },
   data: function() {
     return {
+      animation: {
+        fadeIn: {
+          classes: "fadeIn",
+          duration: 1000,
+          delay:800
+        }
+      },
       clientes: [
         {
           title: "En servcio al cliente...",

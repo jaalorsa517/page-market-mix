@@ -1,5 +1,5 @@
 <template lang="pug">
-  .card
+  .card(v-animate-css="animation.fadeInLeft")
     .card--logo
       img(:src="image" alt="logo")
     .card--title
@@ -16,6 +16,16 @@ export default Vue.extend({
     image: { type: String, required: true },
     title: { type: String, required: true },
     paragraph: { type: String, required: true }
+  },
+  data: function() {
+    return {
+      animation: {
+        fadeInLeft: {
+          classes: "fadeInLeft",
+          delay: 600
+        }
+      }
+    };
   }
 });
 </script>

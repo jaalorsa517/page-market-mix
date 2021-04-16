@@ -1,15 +1,33 @@
 <template lang="pug">
 header.header-container
-  .header__logo
-    img(src="@/assets/logo.png")
+  .header__logo()
+    img(src="@/assets/logo.png" v-animate-css="animation.rubberBand")
     
   nav
     ul.header__items
-      li Inicio
-      li Nosotros
-      li Contáctanos
-      li Trabaje con nosotros
+      li(v-animate-css="animation.tada") Inicio
+      li(v-animate-css="animation.tada") Nosotros
+      li(v-animate-css="animation.tada") Contáctanos
+      li(v-animate-css="animation.tada") Trabaje con nosotros
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  data:function (){
+    return {
+      animation:{
+        rubberBand:{
+          classes:"rubberBand"
+        },
+        tada:{
+          classes:"tada"
+        }
+      }
+    }
+  }
+})
+</script>
 
 <style lang="stylus">
 

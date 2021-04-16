@@ -8,4 +8,5 @@ declare module "*.png" {
   export = value;
 }
 
-declare module "vue-carousel"
+declare module "v-animate-css";
+declare module "vue-carousel";

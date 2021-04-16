@@ -8,13 +8,15 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "v-animate-css": "^0.0.3",
     "vue": "^2.6.11",
+    "vue-animate-css": "^1.0.0",
     "vue-carousel": "^0.18.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-typescript": "~4.5.0",
-    "@vue/cli-service": "^4.1.1",
+    "@vue/cli-service": "^3.12.1",
     "style-resources-loader": "^1.4.1",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
